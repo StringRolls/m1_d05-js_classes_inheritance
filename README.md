@@ -1,0 +1,1 @@
+# m1_d05-js_classes_inheritance
