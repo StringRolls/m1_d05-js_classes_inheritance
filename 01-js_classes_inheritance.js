@@ -70,7 +70,7 @@ class Animal {
       }
 
       speak(){ // We are overriding the parent method. It's called shadowing. We re-define it to be different in the child class
-          return super.speak() + ` and I am a ${this.kind}`
+          return super.speak() + ` and I am a ${this.kind}` // You can invoke the parent method inside the child class
       }
   }
 
