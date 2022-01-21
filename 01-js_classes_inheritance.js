@@ -73,11 +73,14 @@ class Animal {
           return super.speak() + ` and I am a ${this.kind}` // You can invoke the parent method inside the child class
       }
   }
+  
 
   const martini = new Dog("Martini", 12)
   console.log("martini speaks and walks: ", martini.speak(), martini.walk())
-
+  console.log(martini) // Will tell you this is of class Dog !
+  
   const santana = new Cat("Santana", 9)
   console.log("santana speaks and walks: ", santana.speak(), santana.walk())
+  console.log(santana) // Will tell you this is of class Cat !
 
 
