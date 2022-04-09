@@ -84,3 +84,43 @@ class Animal {
   console.log(santana) // Will tell you this is of class Cat !
 
 
+// Example 2
+  class Person {
+
+    constructor(nameValue, lastNameValue, ageValue, weightValue, heightValue, hobbiesValue) {
+        this.name = nameValue
+        this.lastName = lastNameValue
+        this.age = ageValue
+        this.weight = weightValue
+        this.height = heightValue
+        this.hobbies = hobbiesValue
+        this.alive = true
+    }
+
+    learnNewHobby(newHobby) {
+        this.hobbies.push(newHobby)
+    }
+
+    gainWeight(extraKilos) {
+        this.weight += extraKilos
+    }
+
+    grow(years = 1) {
+        this.age += years
+    }
+}
+
+
+const person1 = new Person('Germán', 'Álvarez', 35, 80, 1.70, ['sky', 'beer'])
+const person2 = new Person('Ana', 'de Ordanza', 29, 60, 1.65, ['gadgets', 'coding'])
+
+console.log(`My name is ${person1.name} an I am ${person1.age} years old`)
+
+console.log(`My hobbies are ${person2.hobbies}`)
+person2.learnNewHobby('snowboard')
+console.log(`My hobbies are ${person2.hobbies}`)
+
+console.log(`${person1.name} before the bootcamp I was ${person1.weight}`)
+person1.gainWeight(2.6)
+console.log(`${person1.name} now I weight ${person1.weight}`)
+
