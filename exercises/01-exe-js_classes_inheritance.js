@@ -33,5 +33,8 @@ console.log('Perimeter of s2 =', s2.calculatePerimeter()); // 40
 console.log('Area of s2 =', s2.calculateArea()); // 100
 
 /*
-Note: Although the `square` class accepts just one parameter you have to pass `two` parameters while calling the `super` method ? Why ? Because as we saw in class the `super` method invokes/calls the parent class `constructor` method. And here the parent class is `rectangle`
+Note: Although the `square` class accepts just one parameter
+      you have to pass `two` parameters while calling the `super` method.
+      Why is that?
+      Answer here in the comment...
 */
